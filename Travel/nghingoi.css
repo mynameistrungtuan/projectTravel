@@ -1,0 +1,440 @@
+body {
+    font-size: 12px;
+    background-color: rgb(236, 230, 222);
+}
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #34495e;
+    padding: 0 20px;
+    color: #fff;
+    z-index: 10000;
+}
+.logo {
+    margin-top: 15px;
+    margin-left: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 42px;
+    float: left;
+    background-image: url('https://scontent.fdad1-1.fna.fbcdn.net/v/t1.15752-9/64995935_493129528096996_617922356534312960_n.png?_nc_cat=100&_nc_oc=AQkpkvMslGL5Xl0aBiot3bKCsMgZzi5ge3w12S6won78BWsM4o5tvm-jSrTMgmUEhBo&_nc_ht=scontent.fdad1-1.fna&oh=c0e2ec1660a35c943b44757a62fe6c62&oe=5D7E6C3E');
+}
+.menu {
+    float: right;
+    line-height: 80px;  
+    margin-right: 50px;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+ .show-menu-btn, .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn{
+    float: right;
+}
+.show-menu-btn i {
+    line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #1a5896;
+} 
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+@media screen and (max-width: 800px) {
+    .show-menu-btn, .hide-menu-btn {
+        display: block;
+    }
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+        z-index: 10000;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .menu {
+        right: 0;
+    }
+}
+
+.vietnam {
+    width: 80%;
+    margin: auto;
+}
+
+.vietnam .booking {
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-top: 10%;
+}
+
+.vietnam .booking p, .vietnam .booking select {
+    float: left;
+    margin-left: 40px;
+}
+
+.vietnam .booking button {
+    width: 20%;
+    border: 1px solid gray;
+    background: #1a5896;
+    margin-top: 20px;
+    margin-right: 70px;
+    color: #f1f1f1;
+}
+
+.vietnam .booking button:hover {
+    background: #3498db;
+}
+
+.international {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+.international .booking {
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-top: 10%;
+}
+
+.international .booking p, .international .booking select {
+    float: left;
+    margin-left: 40px;
+}
+
+.international .booking button {
+    width: 20%;
+    border: 1px solid gray;
+    background: #1a5896;
+    margin-top: 20px;
+    margin-right: 70px;
+    color: #f1f1f1;
+}
+
+.international .booking button:hover {
+    background: #3498db;
+}
+
+.btn-find button {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    margin-top: 7%;
+    margin-left: 25%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgb(41, 42, 43);
+}
+.btn-find button:hover {
+    background-color: rgb(148, 21, 21);
+}
+
+.btn-more button {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    width: 20%;
+    margin-top: 3%;
+    margin-left: 25%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgb(149, 156, 163);
+    float: right;
+}
+.btn-more button:hover {
+    background-color: rgb(148, 21, 21);
+}
+
+.family-food {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.love-trip {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.love-trip .love .btn-more button {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    width: 32%;
+    margin-top: 3%;
+    margin-left: 25%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgb(149, 156, 163);
+    float: right;
+}
+.love-trip .love .btn-more button:hover {
+    background-color: rgb(148, 21, 21);
+}
+.love-trip .trip .btn-more button {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    width: 16%;
+    margin-top: 1%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgb(149, 156, 163);
+}
+
+.find {
+    position: fixed;
+    top: 15%;
+    left: 0%;
+    width: 6%;
+    text-align: center;
+    z-index: 5;;
+}
+.summer {
+    position: fixed;
+    top: 25%;
+    left: 0%;
+    width: 6%;
+    text-align: center;
+}
+.winter {
+    position: fixed;
+    top: 35%;
+    left: 0%;
+    width: 6%;
+    text-align: center;
+}
+.login {
+    position: fixed;
+    top: 45%;
+    left: 0%;
+    width: 6%;
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #191919;
+    color:  #3498db;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i {
+    line-height: 10px;
+    font-size: 20px;
+    transition:  0.2s linear;
+}
+.btn:hover i {
+    transform: scale(1.4);
+    color: #f1f1f1f1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }50% {
+        left: 10%;
+        top: -30%;
+    }100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+
+
+
+.photo-contact {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.photo-contact .photo .photo-img h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.line-end {
+    width: 65%;
+    margin: auto;
+}
+
+.event-phone {
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.event-phone .event {
+    color: rgb(102, 57, 57);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    border-left: 1px solid gray;
+}
+.event-phone .event .business ul li {
+    margin-top: 3px;
+}
+.event-phone .phone {
+    border-left: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.event-phone .register {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.event-phone .business {
+    border-left: 1px solid gray;
+    color: rgb(102, 57, 57);
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.event-phone .phone h5 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.event-phone .phone p {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.event-phone .phone h4 {
+    font-size: 24px;
+    cursor: pointer;
+}
+.event-phone .phone h4:hover {
+    color: brown;
+}
+.event-phone .register h5 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.event-phone .register p {
+    font-size: 8px;
+    margin-top: -5px;
+    margin-bottom: 2px;
+}
+.event-phone .register input {
+    margin-top: 5%;
+    font-size: 10px;
+    width: 100%;
+}
+.event-phone .register button {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 10px;
+    color: rgb(45, 121, 189);
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.event-phone .register button:hover {
+    background-color: rgb(180, 158, 190);
+}
+
+
+.search {
+    position: absolute;
+    width: 40%;
+    top: 18%;
+    left: 8%;
+    position: fixed;
+}
+
+.search input {
+    width: 80%;
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+.footer {
+    width: 65%;
+    margin: auto;
+    margin-top: 5%;
+}
+.footer .copy {
+    margin-top: 0;
+}
+.footer .social {
+    font-size: 25px;
+}
+.footer .social .icon {
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer .social .icon:hover {
+    color: rgb(148, 21, 21);
+}

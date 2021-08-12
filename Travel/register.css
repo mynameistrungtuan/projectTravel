@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('banner.jpg');
+    background-size: cover;
+}
+.login {
+    width: 30%;
+    margin: auto;
+    margin-top: 10%;
+}
+.text {
+    width: 100%;
+    border-bottom-color: none;
+    border-bottom: 1px solid beige;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.text i {
+    color: aliceblue;
+}
+.login .text input  {
+   background: none;
+   border: none;
+   width: 98%;
+   padding-left: 5px;
+   color: rgb(223, 223, 223);
+   outline: none;
+}
+
+.btn-ok {
+    width: 100%;
+    background: rgb(26, 168, 173);
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.btn-ok:hover {
+    background: rgb(18, 129, 133);
+}
+.alert {
+    margin-top: 35px;
+    float: left;
+    font-size: 12px;
+    color: white;
+    margin-left: 180px;
+}
+
+.head {
+    width: 40%;
+    margin: auto;
+}
+.foot {
+    font-size: 14px;
+    color: white;
+}
+.foot p {
+    margin-left: 105px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.social {
+    width: 80%;
+    margin: auto;
+}
+.foot .icon1, .icon2, .icon3, .icon4 {
+    display: inline-block;
+    font-size: 25px;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+
+.icon1:hover {
+    background: rgb(1, 43, 80);
+}
+.icon2:hover {
+    background: rgb(32, 133, 221);
+}
+.icon3:hover {
+    background: rgb(85, 10, 10);
+}
+.icon4:hover {
+    background: rgb(153, 115, 11);
+}
+h4 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home {
+    float: right;
+    font-size: 12px;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.btn-home {
+    background: rgb(30, 37, 131);
+    font-size: 12px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.btn-home a {
+    text-decoration: none;
+    color: white;
+}
+.btn-home:hover {
+    background: rgb(47, 59, 233);
+}

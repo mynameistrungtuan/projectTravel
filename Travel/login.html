@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="login">
+        <div class="head">
+            <h4>Đăng nhập</h4>
+        </div>
+        <div class="text">
+            <i class="fas fa-user"></i>
+            <input type="text" value="Tên đăng nhập" onfocus="this.value = ''" ;
+                onblur=" if(this.value == '') {this.value = 'Tên đăng nhập';}">
+        </div>
+        <div class="text">
+            <i class="fas fa-unlock-alt"></i>
+            <input type="password" value="Mật khẩu" onfocus="this.value = ''" ;
+                onblur=" if(this.value == '') {this.value = 'Mật khẩu';}">
+        </div>
+        <div class="remember">
+            <input type="checkbox" name="" id=""> Ghi nhớ tên đăng nhập
+        </div>
+        <div class="forgot">
+            <a href="#">Quên mật khẩu?</a>
+        </div>
+        <button class="btn-ok">Đăng nhập</button>
+        <div class="foot">
+            <div class="alert">
+                <p>Bạn chưa có tài khoản?</p>
+            </div>
+            <br>
+            <button class="btn-reg"><a href="file:///D:/$BT-HTML/FinalClassProject/register.html">Đăng ký</a></button>
+        </div>      
+    </div>
+    <div class="home">
+        <button class="btn-home"><a href="file:///D:/$BT-HTML/FinalClassProject/PJ2-Summer.html">Trang chủ</a></button>        
+    </div>
+</body>
+
+</html>
